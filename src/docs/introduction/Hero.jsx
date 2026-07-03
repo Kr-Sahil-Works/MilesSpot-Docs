@@ -311,8 +311,8 @@ export default function Hero() {
           className="
           mt-16
           grid
-          grid-cols-2
-          gap-5
+gap-8
+2xl:grid-cols-2
           border-t
           border-white/6
           pt-10

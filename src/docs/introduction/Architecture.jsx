@@ -39,7 +39,7 @@ export default function Architecture() {
         subtitle="Every technology was selected for performance, scalability and developer experience."
       />
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-3">
 
         {stack.map((item) => (
           <GlassCard key={item.title}>

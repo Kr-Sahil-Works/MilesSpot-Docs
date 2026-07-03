@@ -47,7 +47,7 @@ export default function About() {
           exceptional user experience.
         </p>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        <div className="mt-10 grid gap-4 sm:2xl:grid-cols-2">
 
           {highlights.map((item) => {
 

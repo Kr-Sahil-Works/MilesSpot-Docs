@@ -67,7 +67,7 @@ export default function TechStack() {
         subtitle="Spotlight uses carefully selected technologies to provide excellent developer experience and application performance."
       />
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-4">
 
         {stack.map((item) => (
 

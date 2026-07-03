@@ -36,7 +36,7 @@ export default function Stats() {
         subtitle="Every part of Spotlight has been designed for speed, scalability and a premium user experience."
       />
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-4">
 
         {stats.map((item, index) => (
           <motion.div

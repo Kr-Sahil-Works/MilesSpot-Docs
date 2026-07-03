@@ -20,9 +20,11 @@ export default function Layout({ children }) {
 
       <div
         className="
-        mx-auto
+        mx-0
         flex
-        max-w-412.5
+        max-w-450
+        xl:pl-6
+        2xl:pl-10
         gap-10
         px-4
         py-8
@@ -34,9 +36,14 @@ export default function Layout({ children }) {
           <Sidebar />
         </aside>
 
-<div className="flex flex-1 gap-10">
+<div
+className="
+flex-1
+min-w-0
+"
+>
 
-  <main className="w-full max-w-230">
+  <main className="w-full max-w-230 mx-auto">
     {children}
   </main>
 

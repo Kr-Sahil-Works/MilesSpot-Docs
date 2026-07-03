@@ -13,7 +13,7 @@ export default function About() {
           subtitle="A modern social platform built from the ground up with performance, simplicity and beautiful user experience as the primary goals."
         />
 
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-10 2xl:grid-cols-2">
 
           <div>
 
