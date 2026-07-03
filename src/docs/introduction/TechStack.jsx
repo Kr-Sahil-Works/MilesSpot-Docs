@@ -1,7 +1,7 @@
 import GlassCard from "../../components/common/GlassCard";
 import SectionTitle from "../../components/common/SectionTitle";
 
-import reactLogo from "../../assets/images/react.png";
+import reactLogo from "../../assets/images/reactlogo.png";
 import expoLogo from "../../assets/images/expo.png";
 import convexLogo from "../../assets/images/convex.png";
 import clerkLogo from "../../assets/images/clerk.png";
