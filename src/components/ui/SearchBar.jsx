@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { searchItems } from "../../content/search";
+import { searchItems } from "../../content/searchs";
 
 
 function highlight(text, query) {
