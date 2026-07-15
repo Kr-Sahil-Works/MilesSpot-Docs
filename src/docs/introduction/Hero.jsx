@@ -5,6 +5,7 @@ import GlassCard from "../../components/common/GlassCard";
 import Badge from "../../components/common/Badge";
 import Button from "../../components/ui/Button";
 import Logo from "../../components/common/Logo";
+import PlayStoreButton from "../../components/ui/PlayStoreButton";
 
 import { hero, techStack } from "../../content/introduction";
 
@@ -109,12 +110,15 @@ export default function Hero() {
             <h1
               className="
               mt-6
-              max-w-4xl
-              text-5xl
+             max-w-full
+     
               font-black
               leading-[1.05]
               tracking-tight
-              md:text-7xl
+             text-4xl
+sm:text-5xl
+lg:text-6xl
+2xl:text-7xl
               "
             >
               {hero.title}
@@ -124,7 +128,8 @@ export default function Hero() {
               className="
               mt-8
               max-w-2xl
-              text-lg
+              text-base
+sm:text-lg
               leading-8
               text-zinc-400
               "
@@ -145,19 +150,18 @@ export default function Hero() {
 
               <Link to="/installation">
 
-                <Button>
-                  Get Started
-                </Button>
-
               </Link>
 
               <Link to="/features">
 
                 <Button
                   variant="secondary"
+                  className="m"
                 >
                   Explore Features
                 </Button>
+
+                <PlayStoreButton />
 
               </Link>
 
@@ -276,11 +280,15 @@ export default function Hero() {
                 <img
                   src={feed}
                   alt="Spotlight Feed"
-                  className="
-                  w-72.5
-                  rounded-[30px]
-                  object-cover
-                  "
+                className="
+w-64
+sm:w-72
+lg:w-64
+xl:w-72
+2xl:w-80
+rounded-[30px]
+object-cover
+"
                 />
 
                 {/* Reflection */}

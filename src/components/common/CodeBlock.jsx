@@ -1,11 +1,27 @@
-import { Copy } from "lucide-react";
+import { useState } from "react";
+import {
+  Check,
+  Copy,
+} from "lucide-react";
 
 export default function CodeBlock({
   language = "tsx",
   children,
 }) {
+  const [copied, setCopied] = useState(false);
+
   async function copyCode() {
-    await navigator.clipboard.writeText(children);
+    try {
+      await navigator.clipboard.writeText(children);
+
+      setCopied(true);
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 1800);
+    } catch {
+      console.error("Failed to copy");
+    }
   }
 
   return (
@@ -18,6 +34,8 @@ export default function CodeBlock({
       bg-[#08110D]
       "
     >
+      {/* Header */}
+
       <div
         className="
         flex
@@ -29,22 +47,70 @@ export default function CodeBlock({
         py-3
         "
       >
-        <span className="text-sm text-zinc-400">
-          {language}
-        </span>
+        <div className="flex items-center gap-4">
+
+          {/* macOS Dots */}
+
+          <div className="flex gap-2">
+
+            <span className="h-3 w-3 rounded-full bg-red-400" />
+
+            <span className="h-3 w-3 rounded-full bg-yellow-400" />
+
+            <span className="h-3 w-3 rounded-full bg-green-400" />
+
+          </div>
+
+          <span
+            className="
+            rounded-full
+            bg-emerald-500/10
+            px-3
+            py-1
+            text-xs
+            font-medium
+            uppercase
+            tracking-wider
+            text-emerald-300
+            "
+          >
+            {language}
+          </span>
+
+        </div>
 
         <button
           onClick={copyCode}
           className="
+          flex
+          items-center
+          gap-2
           rounded-xl
-          p-2
+          px-3
+          py-2
+          text-sm
+          text-zinc-400
           transition
           hover:bg-white/5
+          hover:text-white
           "
         >
-          <Copy size={17} />
+          {copied ? (
+            <>
+              <Check size={16} />
+              Copied
+            </>
+          ) : (
+            <>
+              <Copy size={16} />
+              Copy
+            </>
+          )}
         </button>
+
       </div>
+
+      {/* Code */}
 
       <pre
         className="
@@ -57,6 +123,7 @@ export default function CodeBlock({
       >
         <code>{children}</code>
       </pre>
+
     </div>
   );
 }
