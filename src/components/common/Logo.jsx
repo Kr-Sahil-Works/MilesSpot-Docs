@@ -12,7 +12,7 @@ export default function Logo({
     >
       <img
         src={logo}
-        alt="Spotlight"
+        alt="MilesSpot"
         width={size}
         height={size}
         className="rounded-xl object-contain"
@@ -21,7 +21,7 @@ export default function Logo({
       {showText && (
         <div>
           <h2 className="text-lg font-bold tracking-tight text-white">
-            Spotlight
+            MilesSpot
           </h2>
 
           <p className="text-xs text-zinc-400">

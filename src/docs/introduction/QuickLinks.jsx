@@ -12,7 +12,7 @@ import SectionTitle from "../../components/common/SectionTitle";
 const links = [
   {
     title: "Installation",
-    description: "Set up Spotlight locally.",
+    description: "Set up MilesSpot locally.",
     icon: Download,
     path: "/installation",
   },

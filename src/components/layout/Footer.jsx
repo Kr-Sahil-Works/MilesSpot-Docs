@@ -26,11 +26,11 @@ export default function Footer() {
           <div>
 
             <h3 className="font-semibold">
-              Spotlight Documentation
+              MilesSpot Documentation
             </h3>
 
             <p className="mt-1 text-sm text-zinc-500">
-              Premium documentation for Spotlight.
+              Premium documentation for MilesSpot.
             </p>
 
           </div>

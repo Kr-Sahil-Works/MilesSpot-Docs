@@ -24,7 +24,7 @@ export default function Build() {
       <SectionTitle
         eyebrow="Troubleshooting"
         title="Build & Common Issues"
-        subtitle="If something doesn't work, these are the most common problems developers encounter while setting up Spotlight."
+        subtitle="If something doesn't work, these are the most common problems developers encounter while setting up MilesSpot."
       />
 
       <GlassCard>
@@ -117,7 +117,7 @@ export default function Build() {
               text-zinc-400
               "
             >
-              Explore Spotlight's messaging system,
+              Explore MilesSpot's messaging system,
               offline support, themes, posts,
               notifications and every major feature.
             </p>

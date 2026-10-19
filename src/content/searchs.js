@@ -1,13 +1,13 @@
 export const searchItems = [
   {
     title: "Introduction",
-    description: "Overview of Spotlight",
+    description: "Overview of MilesSpot",
     path: "/",
     icon: "📖",
     keywords: [
       "intro",
       "overview",
-      "spotlight",
+      "MilesSpot",
       "documentation",
       "start",
     ],
@@ -45,7 +45,7 @@ export const searchItems = [
 
   {
     title: "Delete Account",
-    description: "Delete your Spotlight account",
+    description: "Delete your MilesSpot account",
     path: "/delete-account",
     icon: "🗑️",
     keywords: [

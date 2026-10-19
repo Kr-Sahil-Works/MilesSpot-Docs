@@ -29,7 +29,7 @@ export default function Bookmarks() {
         </h3>
 
         <p className="mt-5 leading-8 text-zinc-400">
-          Spotlight lets users bookmark important posts
+          MilesSpot lets users bookmark important posts
           and access them instantly, even when offline.
         </p>
 

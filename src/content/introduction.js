@@ -1,7 +1,7 @@
 export const hero = {
   badge: "Version 1.0",
 
-  title: "Spotlight Documentation",
+  title: "MilesSpot Documentation",
 
   subtitle:
     "A premium social platform built with React Native, Expo, Convex, Clerk and TypeScript. This documentation covers everything from architecture and features to deployment and performance.",

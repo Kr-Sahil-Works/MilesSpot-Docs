@@ -53,7 +53,7 @@ export default function SearchBar() {
 
   const [recent, setRecent] = useState(() => {
   return JSON.parse(
-    localStorage.getItem("spotlight-search") || "[]"
+    localStorage.getItem("MilesSpot-search") || "[]"
   );
 });
 
@@ -163,7 +163,7 @@ function openPage(item) {
   setRecent(updated);
 
   localStorage.setItem(
-    "spotlight-search",
+    "MilesSpot-search",
     JSON.stringify(updated)
   );
 

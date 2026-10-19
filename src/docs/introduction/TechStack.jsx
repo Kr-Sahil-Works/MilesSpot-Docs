@@ -64,7 +64,7 @@ export default function TechStack() {
       <SectionTitle
         eyebrow="Technology"
         title="Powered by Modern Technologies"
-        subtitle="Spotlight uses carefully selected technologies to provide excellent developer experience and application performance."
+        subtitle="MilesSpot uses carefully selected technologies to provide excellent developer experience and application performance."
       />
 
       <div className="grid gap-6 md:grid-cols-2 2xl:grid-cols-4">

@@ -17,7 +17,7 @@ export default function Running() {
 
       <SectionTitle
         eyebrow="Running"
-        title="Run Spotlight"
+        title="Run MilesSpot"
         subtitle="Launch the development server, test on Android, and generate production builds."
       />
 

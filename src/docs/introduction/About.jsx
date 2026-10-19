@@ -9,7 +9,7 @@ export default function About() {
 
         <SectionTitle
           badge="Overview"
-          title="What is Spotlight?"
+          title="What is MilesSpot?"
           subtitle="A modern social platform built from the ground up with performance, simplicity and beautiful user experience as the primary goals."
         />
 
@@ -19,7 +19,7 @@ export default function About() {
 
             <p className="leading-8 text-zinc-300">
 
-              Spotlight is a modern social networking application
+              MilesSpot is a modern social networking application
               inspired by today's leading messaging and social
               platforms while introducing its own polished design,
               performance optimizations and offline-first experience.

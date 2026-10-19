@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Will my authentication account also be removed?",
-    a: "Yes. Your Clerk authentication account is permanently deleted along with your Spotlight account.",
+    a: "Yes. Your Clerk authentication account is permanently deleted along with your MilesSpot account.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function DeleteAccount() {
         <SectionTitle
           eyebrow="Privacy"
           title="Delete Your Account"
-          subtitle="You have complete control over your Spotlight account and personal data."
+          subtitle="You have complete control over your MilesSpot account and personal data."
         />
 
         {/* Warning */}
@@ -73,7 +73,7 @@ export default function DeleteAccount() {
 
             Once your account is deleted,
             all personal data associated
-            with Spotlight will be permanently
+            with MilesSpot will be permanently
             removed from our servers.
 
           </p>
@@ -145,7 +145,7 @@ export default function DeleteAccount() {
           <div className="space-y-6">
 
             {[
-              "Open Spotlight.",
+              "Open MilesSpot.",
               "Go to Profile → Settings.",
               "Select Delete Account.",
               "Confirm your identity.",

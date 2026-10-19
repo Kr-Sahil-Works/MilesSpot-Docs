@@ -40,7 +40,7 @@ export default function Security() {
             </h3>
 
             <p className="mt-6 text-lg leading-8 text-zinc-400">
-              Spotlight uses Clerk Authentication,
+              MilesSpot uses Clerk Authentication,
               secure sessions and protected routes
               to keep user accounts safe.
             </p>
@@ -72,7 +72,7 @@ export default function Security() {
             </h3>
 
             <p className="mt-3 text-zinc-400">
-              Learn how to permanently delete your Spotlight account.
+              Learn how to permanently delete your MilesSpot account.
             </p>
 
           </div>

@@ -133,7 +133,7 @@ export default function Posts() {
               text-zinc-400
               "
             >
-              Spotlight combines modern social sharing,
+              MilesSpot combines modern social sharing,
               clean layouts and optimized media delivery
               for a premium experience.
             </p>

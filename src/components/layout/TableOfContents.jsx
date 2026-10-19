@@ -33,14 +33,14 @@ export default function About() {
 
       <SectionTitle
         eyebrow="Overview"
-        title="What is Spotlight?"
+        title="What is MilesSpot?"
         subtitle="A premium social platform engineered with performance, simplicity and scalability."
       />
 
       <GlassCard>
 
         <p className="text-lg leading-8 text-zinc-300">
-          Spotlight combines realtime messaging, social sharing,
+          MilesSpot combines realtime messaging, social sharing,
           offline-first architecture and premium UI into one
           modern mobile application. Every feature has been
           carefully designed for smooth performance and an

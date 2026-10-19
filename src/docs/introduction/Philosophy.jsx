@@ -20,7 +20,7 @@ const principles = [
   },
   {
     title: "Developer Experience",
-    text: "TypeScript, reusable components and clean architecture make Spotlight easier to maintain.",
+    text: "TypeScript, reusable components and clean architecture make MilesSpot easier to maintain.",
   },
   {
     title: "Security",
@@ -37,7 +37,7 @@ export default function Philosophy() {
         <SectionTitle
           badge="Philosophy"
           title="Design Principles"
-          subtitle="The core ideas behind Spotlight's architecture and user experience."
+          subtitle="The core ideas behind MilesSpot's architecture and user experience."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">

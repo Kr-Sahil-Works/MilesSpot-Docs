@@ -41,7 +41,7 @@ export const navigation = [
         title: "Delete Account",
         path: "/delete-account",
         component: DeleteAccount,
-        description: "Delete your Spotlight account",
+        description: "Delete your MilesSpot account",
       },
     ],
   },

@@ -6,7 +6,7 @@ import Badge from "../../components/common/Badge";
 const cloneCommand =
 `git clone https://github.com/yourusername/spotlight.git
 
-cd spotlight
+cd MilesSpot
 
 npm install`;
 
@@ -21,7 +21,7 @@ export default function Setup() {
 
       <SectionTitle
         eyebrow="Setup"
-        title="Install Spotlight in under 5 minutes"
+        title="Install MilesSpot in under 5 minutes"
         subtitle="Clone the repository, install dependencies and configure your environment variables."
       />
 
@@ -50,7 +50,7 @@ export default function Setup() {
             text-zinc-400
             "
           >
-            Clone the Spotlight repository from GitHub and
+            Clone the MilesSpot repository from GitHub and
             install all required packages.
           </p>
 

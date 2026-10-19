@@ -61,7 +61,7 @@ export default function Requirements() {
       <SectionTitle
         eyebrow="Installation"
         title="Before You Begin"
-        subtitle="Install these tools before setting up Spotlight. They are required for local development and production builds."
+        subtitle="Install these tools before setting up MilesSpot. They are required for local development and production builds."
       />
 
       <div

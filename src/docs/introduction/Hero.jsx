@@ -279,7 +279,7 @@ sm:text-lg
 
                 <img
                   src={feed}
-                  alt="Spotlight Feed"
+                  alt="MilesSpot Feed"
                 className="
 w-64
 sm:w-72

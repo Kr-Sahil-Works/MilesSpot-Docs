@@ -24,7 +24,7 @@ export default function Chat() {
       <SectionTitle
         eyebrow="Messaging"
         title="Modern Chat Experience"
-        subtitle="Spotlight delivers a fast, reliable and premium messaging experience inspired by today's leading social platforms."
+        subtitle="MilesSpot delivers a fast, reliable and premium messaging experience inspired by today's leading social platforms."
       />
 
       <GlassCard
@@ -78,7 +78,7 @@ export default function Chat() {
               "
             >
               From personal chats to group conversations,
-              Spotlight focuses on responsiveness,
+              MilesSpot focuses on responsiveness,
               clean design and smooth interactions.
             </p>
 
@@ -161,10 +161,10 @@ export default function Chat() {
 
               <img
                 src={chat}
-                alt="Spotlight Chat"
+                alt="MilesSpot Chat"
                 className="
                 relative
-                w-[280px]
+                w-70
                 rounded-[36px]
                 border
                 border-white/10
