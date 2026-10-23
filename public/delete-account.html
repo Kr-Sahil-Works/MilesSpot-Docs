@@ -1,262 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MilesSpot - Delete Account</title>
-
+<meta name="theme-color" content="#090906">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Inter,sans-serif;
-background:#070707;
-color:#f5f5f5;
-line-height:1.7;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:70px 24px;
-}
-
-.logo{
-font-size:42px;
-font-weight:800;
-color:#16e45f;
-letter-spacing:1px;
-}
-
-.subtitle{
-margin-top:10px;
-font-size:18px;
-color:#9ca3af;
-}
-
-.hero{
-margin-top:45px;
-padding:38px;
-background:#111;
-border:1px solid #202020;
-border-radius:24px;
-}
-
-.hero h1{
-font-size:38px;
-margin-bottom:14px;
-}
-
-.hero p{
-color:#c9c9c9;
-}
-
-.section{
-margin-top:42px;
-background:#111;
-border:1px solid #202020;
-border-radius:22px;
-padding:30px;
-}
-
-.section h2{
-color:#16e45f;
-margin-bottom:18px;
-font-size:26px;
-}
-
-.section ul{
-margin-left:22px;
-}
-
-.section li{
-margin-bottom:12px;
-color:#d6d6d6;
-}
-
-.card{
-margin-top:18px;
-padding:18px;
-border-radius:16px;
-background:#151515;
-border:1px solid #252525;
-}
-
-.email{
-display:inline-block;
-margin-top:10px;
-padding:14px 22px;
-background:#16e45f22;
-border:1px solid #16e45f55;
-border-radius:14px;
-color:#16e45f;
-font-weight:700;
-text-decoration:none;
-}
-
-.notice{
-margin-top:18px;
-padding:18px;
-border-radius:16px;
-background:#0d1d13;
-border:1px solid #174d2d;
-}
-
-.footer{
-margin-top:60px;
-padding-top:28px;
-border-top:1px solid #202020;
-text-align:center;
-color:#8f8f8f;
-font-size:14px;
-}
-
-.badge{
-display:inline-block;
-padding:8px 16px;
-border-radius:999px;
-background:#16e45f22;
-color:#16e45f;
-font-weight:600;
-margin-bottom:18px;
-}
-
-a{
-color:#16e45f;
-text-decoration:none;
-}
-
+:root{color-scheme:dark;--bg:#090906;--panel:#13120c;--text:#f7f4e8;--muted:#b9b5a3;--line:#35301a;--yellow:#f2c230;--bright:#ffd84d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(ellipse at top,#29210b 0,var(--bg) 42rem);color:var(--text);line-height:1.75}
+a{color:var(--bright);text-decoration:none;overflow-wrap:anywhere}a:hover{text-decoration:underline}
+.container{width:min(920px,100% - 36px);margin:auto;padding:48px 0 36px}
+.logo,.brand-name{font-size:30px;font-weight:800;letter-spacing:-.8px}.logo span,.brand-name span{color:var(--yellow)}
+.subtitle,.eyebrow{margin-top:6px;color:var(--muted);font-size:13px;letter-spacing:1.8px;text-transform:uppercase}
+.hero{margin-top:32px;padding:clamp(26px,5vw,48px);border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#1b180c,#11110b 65%);box-shadow:0 22px 65px #0005}
+.badge,.pill{display:inline-block;padding:7px 13px;border:1px solid #6c5515;border-radius:999px;color:var(--bright);background:#f2c23018;font-size:13px;font-weight:700;margin-bottom:18px}
+h1{margin-top:12px;font-size:clamp(34px,6vw,48px);line-height:1.12;letter-spacing:-1.5px;margin-bottom:14px}
+.hero p{margin-top:12px;color:var(--muted)}
+.section{margin-top:18px;padding:clamp(22px,4vw,32px);border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+h2{margin-bottom:12px;color:var(--yellow);font-size:23px;line-height:1.35}
+p{color:#d8d3c2}p+p{margin-top:12px}
+ul{margin:12px 0 0 22px;color:#d8d3c2}li{margin:7px 0;padding-left:3px}
+.card,.contact{margin-top:14px;padding:18px;border-radius:14px;background:#19170d;border:1px solid var(--line)}
+.email{display:inline-block;margin-top:14px;padding:12px 18px;border:1px solid #6c5515;border-radius:12px;background:#f2c23018;color:var(--bright);font-weight:700;overflow-wrap:anywhere}
+.notice,.highlight{margin-top:16px;padding:16px 18px;border-radius:14px;border:1px solid #5b4917;background:#201a09;color:#eee2bd}
+.footer{margin-top:32px;padding:24px 8px 0;border-top:1px solid var(--line);text-align:center;color:#8f896f;font-size:13px}
+.footer p{color:inherit}
+@media(max-width:520px){.container{width:calc(100% - 24px);padding-top:26px}.logo,.brand-name{font-size:27px}.section,.hero{border-radius:18px}}
 </style>
-
 </head>
-
 <body>
+<main class="container">
+<header>
+  <div class="logo">Miles<span>Spot</span></div>
+  <div class="subtitle">Community safety & privacy</div>
+</header>
 
-<div class="container">
+<section class="hero">
+  <div class="badge">Privacy &amp; Data</div>
+  <h1>Delete Your MilesSpot Account</h1>
+  <p>If you want to permanently delete your MilesSpot account and associated data, email our support team using the address below. We will verify your request and process it in accordance with applicable law and our retention obligations.</p>
+  <a class="email" href="mailto:spotlight.support44@gmail.com?subject=Delete%20My%20MilesSpot%20Account">Request account deletion: spotlight.support44@gmail.com</a>
+</section>
+<section class="section">
+  <h2>How to request deletion</h2>
+  <p>Send an email with the subject <strong>Delete My MilesSpot Account</strong>. Include your MilesSpot username and the email address associated with your account so we can locate and verify it. Do not include your password.</p>
+  <div class="notice"><strong>Processing time:</strong> We aim to process verified requests within 30 days. We may contact you if we need additional information to verify your request.</div>
+</section>
+<section class="section">
+  <h2>Data that may be deleted</h2>
+  <p>Subject to verification and applicable legal or security requirements, deletion may cover:</p>
+  <ul>
+    <li>Account identifiers and profile details</li>
+    <li>Posts and uploaded media associated with your account</li>
+    <li>Stories and notes associated with your account</li>
+    <li>Messages and social relationship data associated with your account, where deletion is technically and legally applicable</li>
+    <li>Bookmarks and saved preferences</li>
+  </ul>
+  <p>Some copies of messages or content already received by other users may remain visible to those users, and limited records may be retained where required for legal compliance, security, fraud prevention, or dispute resolution.</p>
+</section>
+<section class="section">
+  <h2>Need help?</h2>
+  <p>For account deletion questions, contact:</p>
+  <div class="contact"><p><strong>MilesSpot Support</strong></p><p><a href="mailto:spotlight.support44@gmail.com">spotlight.support44@gmail.com</a></p></div>
+</section>
 
-<div class="logo">
-MilesSpot
-</div>
-
-<div class="subtitle">
-Account Deletion Request
-</div>
-
-<div class="hero">
-
-<div class="badge">
-Privacy & Data
-</div>
-
-<h1>Delete Your MilesSpot Account</h1>
-
-<p>
-If you wish to permanently delete your MilesSpot account and all associated
-data, you may submit a deletion request by contacting our support team.
-Once your request has been verified, your account and associated information
-will be permanently removed.
-</p>
-
-<a class="email" href="mailto:spotlight.support44@gmail.com">
-spotlight.support44@gmail.com
-</a>
-
-</div>
-
-<div class="section">
-
-<h2>How to Request Deletion</h2>
-
-<p>Please send an email containing the following information:</p>
-
-<div class="card">
-
-<ul>
-<li>Your MilesSpot username</li>
-<li>The email address used to register your account</li>
-<li>Subject: <strong>Delete My MilesSpot Account</strong></li>
-
-</ul>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Data That Will Be Deleted</h2>
-
-<ul>
-
-<li>Account information</li>
-<li>Profile details</li>
-<li>Posts and uploaded media</li>
-<li>Stories</li>
-<li>Notes</li>
-<li>Chat messages</li>
-<li>Followers and Following data</li>
-<li>Bookmarks</li>
-<li>Saved preferences</li>
-
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>Data Retention</h2>
-
-<div class="notice">
-
-<p>
-Deletion requests are typically processed within
-<strong>30 days</strong> after verification.
-Some information may be retained for a limited period if required by
-applicable laws, fraud prevention, dispute resolution, or security purposes.
-</p>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Need Help?</h2>
-
-<p>
-If you have questions regarding your account or privacy,
-please contact our support team.
-</p>
-
-<a class="email" href="mailto:spotlight.support44@gmail.com">
-spotlight.support44@gmail.com
-</a>
-
-</div>
-
-<div class="footer">
-
-<p>
-Last Updated: June 2026
-</p>
-
-<p style="margin-top:8px;">
-© 2026 MilesSpot. All Rights Reserved.
-</p>
-
-</div>
-
-</div>
-
+<footer class="footer">
+  <p>Last updated: October 23, 2026</p>
+  <p style="margin-top:6px">© 2026 MilesSpot. All rights reserved.</p>
+</footer>
+</main>
 </body>
-
 </html>

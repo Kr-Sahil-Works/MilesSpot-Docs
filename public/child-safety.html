@@ -1,242 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MilesSpot - Child Safety Standards</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090906">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Inter,sans-serif;
-    background:#070707;
-    color:#f5f5f5;
-    line-height:1.7;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:70px 24px;
-}
-
-.logo{
-    color:#16e45f;
-    font-size:42px;
-    font-weight:800;
-    letter-spacing:1px;
-}
-
-.subtitle{
-    margin-top:10px;
-    color:#9ca3af;
-    font-size:18px;
-}
-
-.hero{
-    margin-top:50px;
-    padding:38px;
-    border-radius:24px;
-    background:#111;
-    border:1px solid #202020;
-}
-
-.hero h1{
-    font-size:38px;
-    margin-bottom:14px;
-}
-
-.hero p{
-    color:#bfbfbf;
-}
-
-.section{
-    margin-top:45px;
-    background:#111;
-    border:1px solid #202020;
-    border-radius:22px;
-    padding:32px;
-}
-
-.section h2{
-    color:#16e45f;
-    margin-bottom:18px;
-    font-size:26px;
-}
-
-.section ul{
-    margin-left:22px;
-}
-
-.section li{
-    margin-bottom:12px;
-    color:#d4d4d4;
-}
-
-.highlight{
-    padding:18px;
-    margin-top:18px;
-    border-radius:16px;
-    background:#0d1d13;
-    border:1px solid #174d2d;
-}
-
-.contact{
-    margin-top:18px;
-    padding:18px;
-    border-radius:16px;
-    background:#151515;
-}
-
-.contact p{
-    margin:6px 0;
-}
-
-.footer{
-    margin-top:60px;
-    text-align:center;
-    color:#8b8b8b;
-    font-size:14px;
-    border-top:1px solid #202020;
-    padding-top:30px;
-}
-
-a{
-    color:#16e45f;
-    text-decoration:none;
-}
-
-.badge{
-    display:inline-block;
-    background:#16e45f22;
-    color:#16e45f;
-    padding:8px 16px;
-    border-radius:999px;
-    font-weight:600;
-    margin-bottom:18px;
-}
+:root{color-scheme:dark;--bg:#090906;--panel:#13120c;--text:#f7f4e8;--muted:#b9b5a3;--line:#35301a;--yellow:#f2c230;--bright:#ffd84d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(ellipse at top,#29210b 0,var(--bg) 42rem);color:var(--text);line-height:1.75}
+a{color:var(--bright);text-decoration:none;overflow-wrap:anywhere}a:hover{text-decoration:underline}
+.container{width:min(920px,100% - 36px);margin:auto;padding:48px 0 36px}
+.logo,.brand-name{font-size:30px;font-weight:800;letter-spacing:-.8px}.logo span,.brand-name span{color:var(--yellow)}
+.subtitle,.eyebrow{margin-top:6px;color:var(--muted);font-size:13px;letter-spacing:1.8px;text-transform:uppercase}
+.hero{margin-top:32px;padding:clamp(26px,5vw,48px);border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#1b180c,#11110b 65%);box-shadow:0 22px 65px #0005}
+.badge,.pill{display:inline-block;padding:7px 13px;border:1px solid #6c5515;border-radius:999px;color:var(--bright);background:#f2c23018;font-size:13px;font-weight:700;margin-bottom:18px}
+h1{margin-top:12px;font-size:clamp(34px,6vw,48px);line-height:1.12;letter-spacing:-1.5px;margin-bottom:14px}
+.hero p{margin-top:12px;color:var(--muted)}
+.section{margin-top:18px;padding:clamp(22px,4vw,32px);border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+h2{margin-bottom:12px;color:var(--yellow);font-size:23px;line-height:1.35}
+p{color:#d8d3c2}p+p{margin-top:12px}
+ul{margin:12px 0 0 22px;color:#d8d3c2}li{margin:7px 0;padding-left:3px}
+.card,.contact{margin-top:14px;padding:18px;border-radius:14px;background:#19170d;border:1px solid var(--line)}
+.email{display:inline-block;margin-top:14px;padding:12px 18px;border:1px solid #6c5515;border-radius:12px;background:#f2c23018;color:var(--bright);font-weight:700;overflow-wrap:anywhere}
+.notice,.highlight{margin-top:16px;padding:16px 18px;border-radius:14px;border:1px solid #5b4917;background:#201a09;color:#eee2bd}
+.footer{margin-top:32px;padding:24px 8px 0;border-top:1px solid var(--line);text-align:center;color:#8f896f;font-size:13px}
+.footer p{color:inherit}
+@media(max-width:520px){.container{width:calc(100% - 24px);padding-top:26px}.logo,.brand-name{font-size:27px}.section,.hero{border-radius:18px}}
 </style>
-
 </head>
 <body>
+<main class="container">
+<header>
+  <div class="logo">Miles<span>Spot</span></div>
+  <div class="subtitle">Community safety & privacy</div>
+</header>
 
-<div class="container">
+<section class="hero">
+  <div class="badge">Child Protection</div>
+  <h1>MilesSpot Child Safety Standards</h1>
+  <p>MilesSpot is committed to a safer, respectful community. We prohibit child sexual abuse and exploitation, including child sexual abuse material (CSAM), grooming, trafficking, coercion, and attempts to exploit minors. Violations may result in content removal, account suspension, and reports to appropriate authorities where required by law.</p>
+</section>
+<section class="section">
+  <h2>Prohibited content and behavior</h2>
+  <ul>
+    <li>Child sexual abuse material (CSAM)</li>
+    <li>Sexual exploitation of, or sexualized content involving, minors</li>
+    <li>Grooming or attempts to contact minors for exploitation</li>
+    <li>Requests to create, share, or obtain child abuse material</li>
+    <li>Trafficking, coercion, or other exploitation of children</li>
+    <li>Other illegal abusive content involving minors</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Reporting concerns</h2>
+  <p>Users can report inappropriate content, accounts, messages, or behavior through reporting tools available in MilesSpot. You may also contact our support team about child-safety concerns.</p>
+  <div class="notice"><strong>Possible enforcement actions</strong>
+    <ul><li>Review and removal of violating content</li><li>Temporary or permanent account suspension</li><li>Escalation to relevant authorities when appropriate or legally required</li></ul>
+  </div>
+</section>
+<section class="section">
+  <h2>Our commitment</h2>
+  <p>We aim to improve community safety and review reports as promptly as practicable. We prohibit child sexual abuse and exploitation and cooperate with lawful investigations as required by applicable law.</p>
+</section>
+<section class="section">
+  <h2>Contact</h2>
+  <p>For child-safety reports or questions about these standards, contact:</p>
+  <div class="contact"><p><strong>MilesSpot Support</strong></p><p><a href="mailto:spotlight.support44@gmail.com">spotlight.support44@gmail.com</a></p></div>
+</section>
 
-<div class="logo">MilesSpot</div>
-<div class="subtitle">
-Child Safety Standards & CSAE Policy
-</div>
-
-<div class="hero">
-
-<div class="badge">
-Child Protection
-</div>
-
-<h1>Keeping MilesSpot Safe</h1>
-
-<p>
-MilesSpot is committed to providing a safe and respectful environment for everyone.
-We maintain a zero-tolerance policy toward child sexual abuse material (CSAM),
-child sexual exploitation, grooming, trafficking, or any form of abuse involving minors.
-Any violation of these standards may result in immediate removal of content,
-permanent account suspension, and reporting to relevant authorities when required.
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>Prohibited Content</h2>
-
-<ul>
-<li>Child Sexual Abuse Material (CSAM)</li>
-<li>Sexual exploitation involving minors</li>
-<li>Grooming or attempting to contact minors for exploitation</li>
-<li>Requests for CSAM or abusive material</li>
-<li>Trafficking, coercion, or exploitation of children</li>
-<li>Any illegal content involving minors</li>
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>User Reporting</h2>
-
-<p>
-MilesSpot allows users to report inappropriate content, accounts,
-messages, and other activity directly within the application.
-All reports are reviewed and investigated as quickly as possible.
-</p>
-
-<div class="highlight">
-
-<strong>Enforcement actions may include:</strong>
-
-<ul style="margin-top:12px;">
-<li>Immediate content removal</li>
-<li>Temporary or permanent account suspension</li>
-<li>Reporting to appropriate law enforcement authorities when legally required</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Our Commitment</h2>
-
-<p>
-We continuously improve our moderation systems and community safety measures
-to help prevent abuse and protect our users. MilesSpot complies with applicable
-child safety laws and cooperates with lawful investigations where required.
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>Contact</h2>
-
-<div class="contact">
-
-<p><strong>Email</strong></p>
-
-<p>
-<a href="mailto:spotlight.support44@gmail.com">
-spotlight.support44@gmail.com
-</a>
-</p>
-
-<p>
-For child safety concerns, abuse reports, or policy-related questions,
-please contact us using the email above.
-</p>
-
-</div>
-
-</div>
-
-<div class="footer">
-
-<p>Last Updated: June 2026</p>
-
-<p style="margin-top:8px;">
-© 2026 MilesSpot. All Rights Reserved.
-</p>
-
-</div>
-
-</div>
-
+<footer class="footer">
+  <p>Last updated: October 23, 2026</p>
+  <p style="margin-top:6px">© 2026 MilesSpot. All rights reserved.</p>
+</footer>
+</main>
 </body>
 </html>
